@@ -3,14 +3,18 @@
     padding: 0;
 }
 :root {
-    --branco-principal: #ff0022;
+    --branco-principal: #b205dd;
     --cinza-secundario: #C0C0C0;
-    --botao-azul: #167BF7;
+    --botao-azul: #29f716;
     --cor-de-fundo: #000000;
+    --fonte-principal: 'Inter';
 }
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 
 
@@ -23,7 +27,8 @@ body {
 .container {
 
     height: 100vh;
-
+    display: grid;
+    grid-template-columns: 25% 30%;
 }
 
 .container__botao {
@@ -32,4 +37,15 @@ body {
     padding: 1em;
     color: var(--branco-principal);
     display: block;
+    text-decoration: none;
+}
+
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal)
+}
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-secundario);
 }
